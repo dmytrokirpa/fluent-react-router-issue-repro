@@ -23,4 +23,8 @@ export default defineConfig(({ command }) => ({
   ssr: {
     noExternal: ['@fluentui/react-icons'],
   },
+  optimizeDeps: {
+    force: true,
+    include: ['@fluentui/react-nav-preview', '@fluentui/react-components', '@griffel/react', '@fluentui/react-icons']
+  }
 }));
